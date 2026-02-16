@@ -1200,6 +1200,19 @@
     </style>
 </head>
 <body>
+    <div style="
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%) rotate(-30deg);
+font-size: 90px;
+color: rgba(0,0,0,0.04);
+z-index: 9999;
+pointer-events: none;
+white-space: nowrap;
+font-weight: bold;">
+DEMO VERSION
+</div>
     <!-- Navigation -->
     <div class="nav-container">
         <nav>
@@ -1683,6 +1696,14 @@
     </a>
 
     <script>
+        document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
+document.addEventListener('keydown', function(e) {
+    if (e.keyCode == 123) {
+        e.preventDefault();
+    }
+});
         // Mobile Navigation Toggle
         const mobileToggle = document.querySelector('.mobile-toggle');
         const navLinks = document.querySelector('.nav-links');
