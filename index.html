@@ -1,0 +1,1796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoomorph Studio - Premier Interior Design & Architecture in Noida | Transform Your Space</title>
+    <meta name="description" content="Zoomorph Studio is Noida's leading interior design firm specializing in luxury residential, commercial & hospitality spaces. Award-winning architects at Sector 62 creating innovative, sustainable designs.">
+    <meta name="keywords" content="interior designer Noida, best interior designers Noida, luxury interior design, commercial interior design, residential interior design, architecture firm Noida, Zoomorph Studio, interior design Sector 62">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Crimson+Pro:wght@300;400;600&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "InteriorDesignService",
+      "name": "Zoomorph Studio Private Limited",
+      "image": "https://example.com/logo.png",
+      "description": "Premier interior design and architecture firm in Noida specializing in residential, commercial, and hospitality spaces",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "516, Plot No. B, Noida One – IT Park, Tower B, Units 503 to 8, Sector 62",
+        "addressLocality": "Noida",
+        "addressRegion": "Uttar Pradesh",
+        "postalCode": "201309",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "28.6213",
+        "longitude": "77.3677"
+      },
+      "url": "https://zoomorphstudio.com",
+      "telephone": "+91-XXXXXXXXXX",
+      "priceRange": "₹₹₹",
+      "areaServed": ["Noida", "Delhi NCR", "Greater Noida", "Ghaziabad"],
+      "serviceType": ["Interior Design", "Architecture", "Space Planning", "Residential Design", "Commercial Design", "Hospitality Design"]
+    }
+    </script>
+    
+    <style>
+        :root {
+            --color-black: #0a0a0a;
+            --color-charcoal: #1a1a1a;
+            --color-slate: #2a2a2a;
+            --color-ash: #3a3a3a;
+            --color-silver: #9a9a9a;
+            --color-pearl: #d4d4d4;
+            --color-white: #f8f8f8;
+            --color-gold: #c9a961;
+            --color-gold-dark: #a08749;
+            --color-gold-light: #e4d4a3;
+            --font-display: 'Cormorant Garamond', serif;
+            --font-body: 'Crimson Pro', serif;
+            --font-accent: 'Libre Baskerville', serif;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+        
+        body {
+            font-family: var(--font-body);
+            background: var(--color-black);
+            color: var(--color-pearl);
+            line-height: 1.7;
+            font-size: 17px;
+            overflow-x: hidden;
+        }
+        
+        /* Navigation */
+        .nav-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: linear-gradient(to bottom, rgba(10,10,10,0.98), rgba(10,10,10,0.85));
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(201,169,97,0.15);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .nav-container.scrolled {
+            background: rgba(10,10,10,0.95);
+            border-bottom-color: rgba(201,169,97,0.25);
+        }
+        
+        nav {
+            max-width: 1600px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 28px 60px;
+        }
+        
+        .logo {
+            font-family: var(--font-display);
+            font-size: 32px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: var(--color-gold);
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+        }
+        
+        .logo-sub {
+            font-size: 11px;
+            font-weight: 300;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--color-silver);
+            margin-top: 4px;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 48px;
+            list-style: none;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            color: var(--color-pearl);
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--color-gold);
+            transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .nav-links a:hover {
+            color: var(--color-gold);
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        .mobile-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            cursor: pointer;
+            padding: 8px;
+        }
+        
+        .mobile-toggle span {
+            width: 28px;
+            height: 2px;
+            background: var(--color-gold);
+            transition: all 0.3s ease;
+        }
+        
+        /* Hero Section - Asymmetrical Editorial */
+        .hero {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            position: relative;
+            padding-top: 100px;
+            overflow: hidden;
+        }
+        
+        .hero-content {
+            padding: 120px 60px 80px 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-eyebrow {
+            font-size: 12px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--color-gold);
+            margin-bottom: 24px;
+            font-weight: 300;
+            opacity: 0;
+            animation: fadeUp 1s ease forwards 0.3s;
+        }
+        
+        .hero-title {
+            font-family: var(--font-display);
+            font-size: clamp(52px, 6vw, 88px);
+            font-weight: 300;
+            line-height: 1.1;
+            color: var(--color-white);
+            margin-bottom: 32px;
+            opacity: 0;
+            animation: fadeUp 1s ease forwards 0.5s;
+        }
+        
+        .hero-title strong {
+            font-weight: 700;
+            color: var(--color-gold);
+            display: block;
+        }
+        
+        .hero-description {
+            font-size: 19px;
+            line-height: 1.8;
+            color: var(--color-silver);
+            max-width: 580px;
+            margin-bottom: 48px;
+            font-weight: 300;
+            opacity: 0;
+            animation: fadeUp 1s ease forwards 0.7s;
+        }
+        
+        .hero-cta {
+            display: flex;
+            gap: 20px;
+            opacity: 0;
+            animation: fadeUp 1s ease forwards 0.9s;
+        }
+        
+        .btn-primary {
+            background: var(--color-gold);
+            color: var(--color-black);
+            padding: 18px 42px;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 2px solid var(--color-gold);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: var(--color-gold-light);
+            transition: left 0.5s ease;
+            z-index: -1;
+        }
+        
+        .btn-primary:hover::before {
+            left: 0;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(201,169,97,0.3);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--color-gold);
+            padding: 18px 42px;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border: 2px solid var(--color-gold);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--color-gold);
+            color: var(--color-black);
+            transform: translateY(-2px);
+        }
+        
+        .hero-image {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 40px;
+            opacity: 0;
+            animation: fadeLeft 1.2s ease forwards 0.5s;
+        }
+        
+        .hero-image-wrapper {
+            position: relative;
+            width: 100%;
+            height: 600px;
+            border: 1px solid rgba(201,169,97,0.3);
+            overflow: hidden;
+        }
+        
+        .hero-image-wrapper::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(135deg, var(--color-gold) 0%, transparent 40%, transparent 60%, var(--color-gold) 100%);
+            opacity: 0.15;
+            z-index: 1;
+            pointer-events: none;
+        }
+        
+        .hero-image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(20%) contrast(1.1);
+            transition: transform 0.6s ease;
+        }
+        
+        .hero-image-wrapper:hover img {
+            transform: scale(1.05);
+        }
+        
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeLeft {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        /* Stats Section */
+        .stats-section {
+            padding: 100px 60px;
+            background: linear-gradient(to bottom, var(--color-black), var(--color-charcoal));
+            border-top: 1px solid rgba(201,169,97,0.2);
+            border-bottom: 1px solid rgba(201,169,97,0.2);
+        }
+        
+        .stats-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 60px;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 40px 20px;
+            position: relative;
+        }
+        
+        .stat-item::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1px;
+            height: 60%;
+            background: linear-gradient(to bottom, transparent, var(--color-gold), transparent);
+            opacity: 0.3;
+        }
+        
+        .stat-item:last-child::after {
+            display: none;
+        }
+        
+        .stat-number {
+            font-family: var(--font-display);
+            font-size: 56px;
+            font-weight: 600;
+            color: var(--color-gold);
+            line-height: 1;
+            margin-bottom: 16px;
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--color-silver);
+            font-weight: 300;
+        }
+        
+        /* About Section - Editorial Layout */
+        .about-section {
+            padding: 140px 60px;
+            background: var(--color-black);
+            position: relative;
+        }
+        
+        .about-container {
+            max-width: 1600px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 100px;
+            align-items: center;
+        }
+        
+        .about-images {
+            position: relative;
+            height: 700px;
+        }
+        
+        .about-image-main {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 75%;
+            height: 80%;
+            border: 1px solid rgba(201,169,97,0.3);
+            overflow: hidden;
+        }
+        
+        .about-image-main img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(15%);
+        }
+        
+        .about-image-accent {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 60%;
+            height: 65%;
+            border: 1px solid rgba(201,169,97,0.3);
+            overflow: hidden;
+        }
+        
+        .about-image-accent img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(15%);
+        }
+        
+        .about-content h2 {
+            font-family: var(--font-display);
+            font-size: clamp(42px, 5vw, 64px);
+            font-weight: 300;
+            color: var(--color-white);
+            margin-bottom: 32px;
+            line-height: 1.2;
+        }
+        
+        .about-content h2 span {
+            color: var(--color-gold);
+            font-weight: 600;
+        }
+        
+        .about-text {
+            font-size: 18px;
+            line-height: 1.9;
+            color: var(--color-silver);
+            margin-bottom: 28px;
+            font-weight: 300;
+        }
+        
+        .about-features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+            margin-top: 48px;
+        }
+        
+        .feature-item {
+            padding: 28px;
+            border: 1px solid rgba(201,169,97,0.15);
+            background: rgba(201,169,97,0.03);
+            transition: all 0.4s ease;
+        }
+        
+        .feature-item:hover {
+            border-color: rgba(201,169,97,0.4);
+            background: rgba(201,169,97,0.06);
+            transform: translateY(-4px);
+        }
+        
+        .feature-icon {
+            font-size: 32px;
+            color: var(--color-gold);
+            margin-bottom: 16px;
+        }
+        
+        .feature-title {
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--color-white);
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+        
+        .feature-desc {
+            font-size: 15px;
+            color: var(--color-silver);
+            line-height: 1.6;
+        }
+        
+        /* Services Section */
+        .services-section {
+            padding: 140px 60px;
+            background: linear-gradient(to bottom, var(--color-charcoal), var(--color-black));
+            position: relative;
+        }
+        
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 80px;
+        }
+        
+        .section-eyebrow {
+            font-size: 12px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--color-gold);
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+        
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(38px, 4.5vw, 58px);
+            font-weight: 300;
+            color: var(--color-white);
+            margin-bottom: 24px;
+            line-height: 1.2;
+        }
+        
+        .section-description {
+            font-size: 18px;
+            color: var(--color-silver);
+            line-height: 1.8;
+        }
+        
+        .services-grid {
+            max-width: 1500px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+        
+        .service-card {
+            background: linear-gradient(145deg, rgba(26,26,26,0.8), rgba(10,10,10,0.9));
+            border: 1px solid rgba(201,169,97,0.15);
+            padding: 48px 36px;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--color-gold), var(--color-gold-light));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.5s ease;
+        }
+        
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .service-card:hover {
+            border-color: rgba(201,169,97,0.4);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+        }
+        
+        .service-icon {
+            font-size: 42px;
+            color: var(--color-gold);
+            margin-bottom: 24px;
+            display: inline-block;
+            transition: transform 0.4s ease;
+        }
+        
+        .service-card:hover .service-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+        
+        .service-card h3 {
+            font-family: var(--font-display);
+            font-size: 26px;
+            font-weight: 600;
+            color: var(--color-white);
+            margin-bottom: 16px;
+        }
+        
+        .service-card p {
+            font-size: 16px;
+            color: var(--color-silver);
+            line-height: 1.7;
+            margin-bottom: 24px;
+        }
+        
+        .service-link {
+            color: var(--color-gold);
+            text-decoration: none;
+            font-size: 14px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: gap 0.3s ease;
+        }
+        
+        .service-link:hover {
+            gap: 14px;
+        }
+        
+        /* Gallery Section */
+        .gallery-section {
+            padding: 140px 60px;
+            background: var(--color-black);
+        }
+        
+        .gallery-grid {
+            max-width: 1600px;
+            margin: 60px auto 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        
+        .gallery-item {
+            position: relative;
+            aspect-ratio: 4/3;
+            overflow: hidden;
+            border: 1px solid rgba(201,169,97,0.2);
+            cursor: pointer;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(30%);
+            transition: all 0.6s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.08);
+            filter: grayscale(0%);
+        }
+        
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(10,10,10,0.95), transparent);
+            padding: 32px 24px;
+            transform: translateY(100%);
+            transition: transform 0.4s ease;
+        }
+        
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+        
+        .gallery-title {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--color-white);
+            margin-bottom: 8px;
+        }
+        
+        .gallery-category {
+            font-size: 13px;
+            color: var(--color-gold);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        
+        /* Testimonials Section */
+        .testimonials-section {
+            padding: 140px 60px;
+            background: linear-gradient(to bottom, var(--color-charcoal), var(--color-black));
+            position: relative;
+        }
+        
+        .testimonials-container {
+            max-width: 1400px;
+            margin: 60px auto 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px;
+        }
+        
+        .testimonial-card {
+            background: rgba(26,26,26,0.6);
+            border: 1px solid rgba(201,169,97,0.15);
+            padding: 48px 42px;
+            position: relative;
+        }
+        
+        .quote-icon {
+            font-size: 64px;
+            color: var(--color-gold);
+            opacity: 0.2;
+            line-height: 1;
+            margin-bottom: 24px;
+        }
+        
+        .testimonial-text {
+            font-size: 18px;
+            line-height: 1.8;
+            color: var(--color-pearl);
+            margin-bottom: 32px;
+            font-style: italic;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        
+        .author-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 2px solid var(--color-gold);
+            overflow: hidden;
+        }
+        
+        .author-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .author-info h4 {
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--color-white);
+            margin-bottom: 4px;
+        }
+        
+        .author-info p {
+            font-size: 14px;
+            color: var(--color-silver);
+        }
+        
+        /* FAQ Section */
+        .faq-section {
+            padding: 140px 60px;
+            background: var(--color-black);
+        }
+        
+        .faq-container {
+            max-width: 1100px;
+            margin: 60px auto 0;
+        }
+        
+        .faq-item {
+            border-bottom: 1px solid rgba(201,169,97,0.15);
+            padding: 32px 0;
+        }
+        
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            gap: 24px;
+        }
+        
+        .faq-question h3 {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--color-white);
+            transition: color 0.3s ease;
+        }
+        
+        .faq-item:hover .faq-question h3 {
+            color: var(--color-gold);
+        }
+        
+        .faq-icon {
+            font-size: 24px;
+            color: var(--color-gold);
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            padding-top: 20px;
+        }
+        
+        .faq-answer p {
+            font-size: 17px;
+            line-height: 1.8;
+            color: var(--color-silver);
+        }
+        
+        /* Contact Section */
+        .contact-section {
+            padding: 140px 60px;
+            background: linear-gradient(to bottom, var(--color-charcoal), var(--color-black));
+        }
+        
+        .contact-container {
+            max-width: 1400px;
+            margin: 60px auto 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+        }
+        
+        .contact-info h3 {
+            font-family: var(--font-display);
+            font-size: 32px;
+            font-weight: 600;
+            color: var(--color-white);
+            margin-bottom: 28px;
+        }
+        
+        .info-item {
+            margin-bottom: 36px;
+            padding-bottom: 36px;
+            border-bottom: 1px solid rgba(201,169,97,0.1);
+        }
+        
+        .info-item:last-child {
+            border-bottom: none;
+        }
+        
+        .info-label {
+            font-size: 12px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--color-gold);
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        
+        .info-value {
+            font-size: 18px;
+            color: var(--color-pearl);
+            line-height: 1.6;
+        }
+        
+        .info-value a {
+            color: var(--color-pearl);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .info-value a:hover {
+            color: var(--color-gold);
+        }
+        
+        .contact-form {
+            background: rgba(26,26,26,0.6);
+            border: 1px solid rgba(201,169,97,0.2);
+            padding: 48px;
+        }
+        
+        .form-group {
+            margin-bottom: 28px;
+        }
+        
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--color-gold);
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            background: rgba(10,10,10,0.7);
+            border: 1px solid rgba(201,169,97,0.2);
+            color: var(--color-pearl);
+            padding: 16px 20px;
+            font-size: 16px;
+            font-family: var(--font-body);
+            transition: all 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--color-gold);
+            background: rgba(10,10,10,0.9);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 160px;
+        }
+        
+        .form-submit {
+            width: 100%;
+            background: var(--color-gold);
+            color: var(--color-black);
+            padding: 18px;
+            border: none;
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.4s ease;
+        }
+        
+        .form-submit:hover {
+            background: var(--color-gold-light);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(201,169,97,0.3);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--color-black);
+            border-top: 1px solid rgba(201,169,97,0.2);
+            padding: 80px 60px 40px;
+        }
+        
+        .footer-content {
+            max-width: 1600px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 60px;
+            margin-bottom: 60px;
+        }
+        
+        .footer-about h3 {
+            font-family: var(--font-display);
+            font-size: 28px;
+            font-weight: 600;
+            color: var(--color-gold);
+            margin-bottom: 20px;
+        }
+        
+        .footer-about p {
+            font-size: 16px;
+            color: var(--color-silver);
+            line-height: 1.7;
+            margin-bottom: 24px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 16px;
+        }
+        
+        .social-links a {
+            width: 44px;
+            height: 44px;
+            border: 1px solid rgba(201,169,97,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-gold);
+            text-decoration: none;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background: var(--color-gold);
+            color: var(--color-black);
+            border-color: var(--color-gold);
+            transform: translateY(-3px);
+        }
+        
+        .footer-links h4 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--color-white);
+            margin-bottom: 24px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 14px;
+        }
+        
+        .footer-links a {
+            color: var(--color-silver);
+            text-decoration: none;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .footer-links a:hover {
+            color: var(--color-gold);
+            transform: translateX(5px);
+        }
+        
+        .footer-bottom {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding-top: 40px;
+            border-top: 1px solid rgba(201,169,97,0.1);
+            text-align: center;
+        }
+        
+        .footer-bottom p {
+            color: var(--color-silver);
+            font-size: 14px;
+        }
+        
+        /* WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, #25d366, #128c7e);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 30px rgba(37,211,102,0.4);
+            z-index: 999;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            text-decoration: none;
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.1) translateY(-4px);
+            box-shadow: 0 12px 40px rgba(37,211,102,0.6);
+        }
+        
+        .whatsapp-float svg {
+            width: 36px;
+            height: 36px;
+            fill: white;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .hero {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero-image {
+                padding: 40px 20px;
+            }
+            
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .about-container {
+                grid-template-columns: 1fr;
+                gap: 60px;
+            }
+            
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            nav {
+                padding: 20px 30px;
+            }
+            
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(10,10,10,0.98);
+                flex-direction: column;
+                padding: 30px;
+                gap: 24px;
+                border-top: 1px solid rgba(201,169,97,0.2);
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .mobile-toggle {
+                display: flex;
+            }
+            
+            .hero-content {
+                padding: 80px 30px 60px;
+            }
+            
+            .hero-title {
+                font-size: 42px;
+            }
+            
+            .hero-cta {
+                flex-direction: column;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .testimonials-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .about-images {
+                height: 500px;
+            }
+            
+            section {
+                padding: 80px 30px !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="nav-container">
+        <nav>
+            <a href="#home" class="logo">
+                Zoomorph
+                <span class="logo-sub">Studio</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-eyebrow">Premier Interior Design</div>
+            <h1 class="hero-title">
+                Crafting Spaces
+                <strong>That Inspire</strong>
+            </h1>
+            <p class="hero-description">
+                At Zoomorph Studio, we transform ordinary spaces into extraordinary experiences. Our award-winning team of architects and designers brings innovative vision and meticulous craftsmanship to every project across residential, commercial, and hospitality sectors in Noida and beyond.
+            </p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn-primary">Start Your Project</a>
+                <a href="#gallery" class="btn-secondary">View Portfolio</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&h=1000&fit=crop" alt="Luxury Interior Design" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number">150+</div>
+                <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">12+</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">98%</div>
+                <div class="stat-label">Client Satisfaction</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">25+</div>
+                <div class="stat-label">Design Awards</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-images">
+                <div class="about-image-main">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=700&fit=crop" alt="Modern Architecture" loading="lazy">
+                </div>
+                <div class="about-image-accent">
+                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=500&h=600&fit=crop" alt="Interior Design Detail" loading="lazy">
+                </div>
+            </div>
+            <div class="about-content">
+                <h2>Redefining <span>Architectural Excellence</span></h2>
+                <p class="about-text">
+                    Zoomorph Studio Private Limited stands as a beacon of innovative design and architectural brilliance in Noida's thriving landscape. Located in the prestigious Noida One IT Park, Sector 62, we have established ourselves as the region's premier interior design and architecture firm.
+                </p>
+                <p class="about-text">
+                    Our philosophy centers on creating spaces that are not just visually stunning but functionally exceptional. We believe that great design should enhance the way people live, work, and interact with their environment. Every project is an opportunity to push creative boundaries while maintaining the highest standards of sustainability and craftsmanship.
+                </p>
+                <div class="about-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">✦</div>
+                        <div class="feature-title">Tailored Designs</div>
+                        <div class="feature-desc">Every project uniquely crafted to reflect your personality and vision</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">✧</div>
+                        <div class="feature-title">Sustainable Approach</div>
+                        <div class="feature-desc">Eco-friendly materials and innovative solutions for timeless spaces</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">✦</div>
+                        <div class="feature-title">Expert Team</div>
+                        <div class="feature-desc">Award-winning architects and designers with decades of experience</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">✧</div>
+                        <div class="feature-title">Turnkey Solutions</div>
+                        <div class="feature-desc">Complete project management from concept to final execution</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="section-header">
+            <div class="section-eyebrow">Our Expertise</div>
+            <h2 class="section-title">Comprehensive Design Solutions</h2>
+            <p class="section-description">
+                From intimate residential spaces to expansive commercial developments, we offer full-spectrum architectural and interior design services tailored to your unique requirements.
+            </p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">⌂</div>
+                <h3>Residential Design</h3>
+                <p>Transform your house into a dream home with our bespoke residential interior design services. We create personalized living spaces that reflect your lifestyle and aesthetic preferences.</p>
+                <a href="#contact" class="service-link">Learn More →</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">⚑</div>
+                <h3>Commercial Spaces</h3>
+                <p>Elevate your business environment with innovative commercial interior design. From corporate offices to retail spaces, we design for productivity and brand identity.</p>
+                <a href="#contact" class="service-link">Learn More →</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">⚘</div>
+                <h3>Hospitality Design</h3>
+                <p>Create memorable guest experiences with our specialized hospitality interior design. We craft immersive environments for hotels, restaurants, and leisure spaces.</p>
+                <a href="#contact" class="service-link">Learn More →</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">⚐</div>
+                <h3>Architectural Design</h3>
+                <p>Comprehensive architectural services from concept to construction. We design structures that are both aesthetically striking and functionally superior.</p>
+                <a href="#contact" class="service-link">Learn More →</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">⚙</div>
+                <h3>Space Planning</h3>
+                <p>Optimize your space with expert planning and layout design. We maximize functionality while maintaining aesthetic harmony in every square foot.</p>
+                <a href="#contact" class="service-link">Learn More →</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">⚛</div>
+                <h3>Turnkey Projects</h3>
+                <p>Complete project management from initial concept through final installation. We handle every detail so you can focus on your vision becoming reality.</p>
+                <a href="#contact" class="service-link">Learn More →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="section-header">
+            <div class="section-eyebrow">Portfolio</div>
+            <h2 class="section-title">Our Recent Work</h2>
+            <p class="section-description">
+                Explore our portfolio of exceptional projects that showcase our commitment to design excellence and attention to detail.
+            </p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=700&h=500&fit=crop" alt="Modern Living Room" loading="lazy">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Contemporary Villa</div>
+                    <div class="gallery-category">Residential</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&h=500&fit=crop" alt="Office Design" loading="lazy">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Corporate Headquarters</div>
+                    <div class="gallery-category">Commercial</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=700&h=500&fit=crop" alt="Bedroom Interior" loading="lazy">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Luxury Apartment</div>
+                    <div class="gallery-category">Residential</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=700&h=500&fit=crop" alt="Restaurant Interior" loading="lazy">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Fine Dining Restaurant</div>
+                    <div class="gallery-category">Hospitality</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=700&h=500&fit=crop" alt="Kitchen Design" loading="lazy">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Gourmet Kitchen</div>
+                    <div class="gallery-category">Residential</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=700&h=500&fit=crop" alt="Hotel Lobby" loading="lazy">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Boutique Hotel Lobby</div>
+                    <div class="gallery-category">Hospitality</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="section-header">
+            <div class="section-eyebrow">Client Reviews</div>
+            <h2 class="section-title">What Our Clients Say</h2>
+            <p class="section-description">
+                Don't just take our word for it. Hear from our satisfied clients about their experience working with Zoomorph Studio.
+            </p>
+        </div>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <div class="quote-icon">"</div>
+                <p class="testimonial-text">
+                    Zoomorph Studio transformed our home beyond our wildest dreams. Their attention to detail and understanding of our vision was exceptional. Every corner reflects our personality while maintaining a cohesive design aesthetic. Highly recommended!
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="Client" loading="lazy">
+                    </div>
+                    <div class="author-info">
+                        <h4>Rajesh Sharma</h4>
+                        <p>Homeowner, Greater Noida</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="quote-icon">"</div>
+                <p class="testimonial-text">
+                    Professional, creative, and incredibly efficient. The Zoomorph team redesigned our corporate office and the results exceeded expectations. Our employees love the new space and it has positively impacted productivity. Worth every penny!
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-image">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" alt="Client" loading="lazy">
+                    </div>
+                    <div class="author-info">
+                        <h4>Priya Mehta</h4>
+                        <p>CEO, Tech Startup</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="quote-icon">"</div>
+                <p class="testimonial-text">
+                    From concept to completion, Zoomorph Studio was a pleasure to work with. Their innovative designs combined with practical solutions made our restaurant both beautiful and functional. The ambiance they created has become our signature.
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-image">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop" alt="Client" loading="lazy">
+                    </div>
+                    <div class="author-info">
+                        <h4>Vikram Singh</h4>
+                        <p>Restaurant Owner, Noida</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="quote-icon">"</div>
+                <p class="testimonial-text">
+                    Choosing Zoomorph Studio was the best decision we made for our villa project. Their sustainable design approach and use of eco-friendly materials aligned perfectly with our values. The end result is a stunning, environmentally conscious home.
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-image">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop" alt="Client" loading="lazy">
+                    </div>
+                    <div class="author-info">
+                        <h4>Ananya Kapoor</h4>
+                        <p>Homeowner, Noida</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="section-header">
+            <div class="section-eyebrow">Common Questions</div>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-description">
+                Find answers to the most common questions about our services, process, and approach to interior design.
+            </p>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What services does Zoomorph Studio offer?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>We offer comprehensive interior design and architectural services including residential design, commercial spaces, hospitality design, architectural planning, space optimization, and complete turnkey project management. Our expertise spans from initial concept development to final installation and execution.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How long does a typical interior design project take?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Project timelines vary based on scope and complexity. A residential apartment typically takes 2-4 months, while larger commercial or hospitality projects may require 6-12 months. We provide detailed timelines during the consultation phase and maintain transparent communication throughout the project.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What is your design process?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Our process begins with an in-depth consultation to understand your vision, requirements, and budget. We then create concept designs and 3D visualizations for your approval. Once finalized, we manage procurement, coordinate with contractors, and oversee installation to ensure flawless execution of the design.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Do you work on projects outside Noida?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>While we're based in Noida, we regularly undertake projects throughout Delhi NCR including Delhi, Ghaziabad, Greater Noida, and Gurgaon. We also accept select projects in other major cities across India. Contact us to discuss your location-specific requirements.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What is the cost of interior design services?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Our pricing is customized based on project scope, size, materials, and complexity. We offer flexible packages to suit various budgets while maintaining our quality standards. Schedule a consultation for a detailed quote tailored to your specific project requirements.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Do you provide 3D visualizations before starting work?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely! We create detailed 3D renderings and visualizations of your space before any work begins. This allows you to see exactly how the finished project will look and make any desired changes to the design before implementation starts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-header">
+            <div class="section-eyebrow">Get In Touch</div>
+            <h2 class="section-title">Start Your Design Journey</h2>
+            <p class="section-description">
+                Ready to transform your space? Contact us today for a consultation and let's bring your vision to life.
+            </p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Visit Our Studio</h3>
+                <div class="info-item">
+                    <div class="info-label">Address</div>
+                    <div class="info-value">
+                        516, Plot No. B, Noida One – IT Park<br>
+                        Tower "B", Units – 503 to 8, Sector 62<br>
+                        Noida, Uttar Pradesh 201309
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Phone</div>
+                    <div class="info-value">
+                        <a href="tel:+919999999999">+91 99999 99999</a>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Email</div>
+                    <div class="info-value">
+                        <a href="mailto:info@zoomorphstudio.com">info@zoomorphstudio.com</a><br>
+                        <a href="mailto:projects@zoomorphstudio.com">projects@zoomorphstudio.com</a>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Business Hours</div>
+                    <div class="info-value">
+                        Monday - Saturday: 10:00 AM - 7:00 PM<br>
+                        Sunday: By Appointment Only
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Required</label>
+                        <input type="text" id="service" name="service" placeholder="e.g., Residential Interior Design">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Project Details *</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="form-submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>Zoomorph Studio</h3>
+                <p>
+                    Premier interior design and architecture firm transforming spaces across Noida and Delhi NCR with innovative designs and sustainable solutions.
+                </p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">f</a>
+                    <a href="#" aria-label="Instagram">i</a>
+                    <a href="#" aria-label="LinkedIn">in</a>
+                    <a href="#" aria-label="Pinterest">p</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Portfolio</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#services">Residential Design</a></li>
+                    <li><a href="#services">Commercial Spaces</a></li>
+                    <li><a href="#services">Hospitality Design</a></li>
+                    <li><a href="#services">Architecture</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#">Career</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Zoomorph Studio Private Limited. All rights reserved. | Designed with Excellence</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/919999999999" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 32 32">
+            <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 7.933-2.127c2.42 1.37 5.173 2.127 8.067 2.127 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.467c-2.482 0-4.908-0.646-7.07-1.87l-0.507-0.292-5.247 1.407 1.417-5.267-0.317-0.524c-1.318-2.163-2.013-4.651-2.013-7.187 0-7.51 6.11-13.62 13.62-13.62s13.62 6.11 13.62 13.62-6.093 13.733-13.503 13.733zM21.52 18.8c-0.397-0.2-2.357-1.163-2.72-1.297s-0.63-0.2-0.897 0.2c-0.267 0.397-1.03 1.297-1.263 1.563s-0.463 0.297-0.86 0.1c-0.397-0.2-1.677-0.618-3.193-1.97-1.18-1.053-1.977-2.35-2.21-2.747s-0.023-0.612 0.173-0.808c0.18-0.18 0.397-0.463 0.597-0.697 0.2-0.233 0.267-0.397 0.397-0.663 0.133-0.267 0.067-0.497-0.033-0.697s-0.897-2.163-1.23-2.957c-0.323-0.775-0.655-0.67-0.897-0.683-0.23-0.012-0.497-0.015-0.763-0.015s-0.697 0.1-1.063 0.497c-0.367 0.397-1.397 1.363-1.397 3.327s1.43 3.86 1.63 4.127c0.2 0.267 2.818 4.304 6.827 6.037 0.953 0.412 1.697 0.658 2.277 0.842 0.96 0.304 1.835 0.261 2.527 0.158 0.771-0.115 2.357-0.964 2.69-1.897s0.333-1.73 0.233-1.897c-0.1-0.167-0.367-0.267-0.763-0.467z"/>
+        </svg>
+    </a>
+
+    <script>
+        // Mobile Navigation Toggle
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        mobileToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+        
+        // Sticky Navigation
+        const navContainer = document.querySelector('.nav-container');
+        let lastScroll = 0;
+        
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 100) {
+                navContainer.classList.add('scrolled');
+            } else {
+                navContainer.classList.remove('scrolled');
+            }
+            
+            lastScroll = currentScroll;
+        });
+        
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            
+            question.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                
+                // Close all items
+                faqItems.forEach(faq => faq.classList.remove('active'));
+                
+                // Open clicked item if it wasn't active
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+        
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = 80;
+                    const targetPosition = target.offsetTop - offset;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Form Submission
+        const contactForm = document.getElementById('contactForm');
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(contactForm);
+            const data = Object.fromEntries(formData);
+            
+            // Here you would typically send the data to a server
+            console.log('Form submitted:', data);
+            
+            // Show success message
+            alert('Thank you for your message! We will get back to you shortly.');
+            
+            // Reset form
+            contactForm.reset();
+        });
+        
+        // Intersection Observer for Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Observe elements for animation
+        document.querySelectorAll('.service-card, .gallery-item, .testimonial-card, .stat-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
